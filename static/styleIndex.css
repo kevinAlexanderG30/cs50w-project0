@@ -1,0 +1,8 @@
+#hoverA:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+td {
+    padding: 20px;
+}
