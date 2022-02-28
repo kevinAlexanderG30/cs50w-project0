@@ -5,42 +5,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="static\styleIndex.css">
+    <title>Hello, world!</title>
+    <style>
 
-    <title>BLEACH</title>
-  </head>
+    body{  
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    }    
+    /* Para un comportamiento responsive */
+    .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    }
+  </style> 
+      
   <body>
     
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h4 class="text-white">Mejores Momentos BLEACH</h4>
-            <span class="text-muted">Vease las siguientes plantillas.</span>
-            <!-- tabla -->
-            <table>
-              <tr>
-                <td><a id="hoverA" class="text-white" href="index.html">Menu</a></td>
-                <td><a id="hoverA" class="text-white" href="opening.html">Opening</a></td>
-                <td><a id="hoverA" class="text-white" href="history.html">Historia</a></td>
-              </tr>
-          </table>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a id="hoverA" class="navbar-brand text-white" href="index.html">BLEACH 2022</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a id="hoverA" class="nav-link text-white" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li  class="nav-item">
+            <a id="hoverA" class="nav-link text-white" href="history.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a id="hoverA" class="nav-link text-white" href="opening.html">opening</a>
+          </li>
+        </ul>
+        <a href="index.html"><span id="hoverA" class="navbar-text text-white">
+          Noticias BLEACH
+        </span></a>
       </div>
+    </nav>
 
   </body>
 </html>
