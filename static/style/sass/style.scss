@@ -1,7 +1,59 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$color-letter-white: #FFFF;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+%opacity-hover {
+  opacity: 0.5;
+  text-decoration: none;
+  color: #fff!important;
+}
+
+.leterWhite{
+  color: #FFFF;
+}
+
+.leterWhite:hover {
+  @extend %opacity-hover;
+
+}
+
+
+/*media para pantallas del juego de bleach*/
+@media only screen and (max-width: 380px){    
+  .inframeScreenMedia {
+      width: 320px;
+      height: 380px;
+      }
+
+}
+
+
+/*para pantalla de index*/
+@media only screen and (max-width: 720px) {
+  .fondoIndex {  
+      background: -webkit-linear-gradient(to right, #2fecec, #003cff);
+      background: linear-gradient(to right, #c02fec, #ff00b3);
+      }  
+
+  h3 {
+      text-align: center;
+      color: lightgoldenrodyellow;
+  }
+  
+  iframe{
+      width: 370px;
+      border: 5px solid black;
+      
+      
+  }
+
+}
+
+/*para pantalla de index*/
+@media only screen and (max-width: 375px) {
+  iframe{
+      width: 300px;
+      height: 200px;
+      border: 5px solid black;
+         
+  }
+
 }
