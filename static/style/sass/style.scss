@@ -1,4 +1,5 @@
 $color-letter-white: #FFFF;
+$color-border: red;
 
 %opacity-hover {
   opacity: 0.5;
@@ -7,12 +8,19 @@ $color-letter-white: #FFFF;
 }
 
 .leterWhite{
-  color: #FFFF;
+  color: $color-letter-white;
 }
 
 .leterWhite:hover {
   @extend %opacity-hover;
 
+}
+
+#example2 {
+  border: 2px solid $color-border;
+  padding: 10px;
+  border-radius: 50px 20px;
+  background-color: $color-border;
 }
 
 
